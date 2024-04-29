@@ -36,6 +36,8 @@ const AutoCompleteAddress = () => {
     ).then((res) => res.json());
 
     setAddressList(result.data);
+    console.log(result);
+    
   };
 
   const handleChangeSource = (e: any) => {
