@@ -1,5 +1,5 @@
 "use client";
-import CardList from "@/app/data/CardList";
+import {CardList} from "@/app/data/CardList";
 import Image from "next/image";
 import React, { useState } from "react";
 

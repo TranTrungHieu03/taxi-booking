@@ -11,7 +11,10 @@ const Booking = () => {
   const screenHight = window.innerHeight * 0.8 || 700;
   const { carAmount, setCarAmount } = useContext(SelectedCarAmountContext);
   const router: any = useRouter();
-  console.log(!carAmount);
+  const [paymentSuccess, setPaymentSuccess] = useState<boolean>(false);
+  const handlePayment = () => {
+    window.location.href = constants.paymentLinks.preOrder;
+  };
 
   return (
     <div className="p-5">
@@ -29,10 +32,7 @@ const Booking = () => {
             !carAmount ? "bg-gray-200" : " bg-yellow-400"
           }`}
           disabled={!carAmount}
-          onClick={() =>
-            // router.push("/payment")
-            (window.location.href = constants.paymentLinks.preOrder)
-          }
+          onClick={handlePayment}
         >
           Book
         </button>

@@ -1,4 +1,4 @@
-export default [
+export const CarList = [
   {
     id: 1,
     name: "Economy",

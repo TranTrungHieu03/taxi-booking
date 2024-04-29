@@ -1,4 +1,4 @@
-export default [
+export const CardList = [
   {
     id: 1,
     name: "Visa",

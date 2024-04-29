@@ -1,5 +1,5 @@
 "use client";
-import CarList from "@/app/data/CarList";
+import {CarList} from "@/app/data/CarList";
 import { DirectDrivingContext } from "@/context/DirectDrivingContext";
 import { SelectedCarAmountContext } from "@/context/SelectedCarAmountContext";
 import Image from "next/image";
